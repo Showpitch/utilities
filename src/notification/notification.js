@@ -3,4 +3,8 @@
  */
 export class Notification {
 
+  send() {
+    alert('hey');
+  }
+
 }
