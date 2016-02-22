@@ -1,7 +1,7 @@
 {
   "name": "utilities",
   "version": "0.0.2",
-  "description": "A drag and drop plugin for aurelia.",
+  "description": "A utilities bucket for the showpitch eco-sphere.",
   "keywords": [
     "aurelia",
     "plugin",
