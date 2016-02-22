@@ -13,12 +13,14 @@ System.register([], function (_export) {
       Notification = (function () {
         function Notification() {
           _classCallCheck(this, Notification);
+
+          this.foo = 1;
         }
 
         _createClass(Notification, [{
-          key: "isTrue",
-          value: function isTrue() {
-            return true;
+          key: "increment",
+          value: function increment() {
+            return this.foo++;
           }
         }]);
 
