@@ -3,8 +3,8 @@
  */
 export class Notification {
 
-  send() {
-    alert('hey');
+  isTrue() {
+    return true;
   }
 
 }
