@@ -1,14 +1,3 @@
-//export function configure(config) {
-//  config.globalResources(
-//    './notification'
-//  );
-//}
-export class Notification {
-  constructor() {
-    this.foo = 1;
-  }
+export {Helpers} from './helpers';
+export {Topics} from './topics';
 
-  increment() {
-    return this.foo++;
-  }
-}

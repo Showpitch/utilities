@@ -1,30 +1,19 @@
-define(["exports"], function (exports) {
-  "use strict";
+define(['exports', './helpers', './topics'], function (exports, _helpers, _topics) {
+  'use strict';
 
-  Object.defineProperty(exports, "__esModule", {
+  Object.defineProperty(exports, '__esModule', {
     value: true
   });
-
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-  var Notification = (function () {
-    function Notification() {
-      _classCallCheck(this, Notification);
-
-      this.foo = 1;
+  Object.defineProperty(exports, 'Helpers', {
+    enumerable: true,
+    get: function get() {
+      return _helpers.Helpers;
     }
-
-    _createClass(Notification, [{
-      key: "increment",
-      value: function increment() {
-        return this.foo++;
-      }
-    }]);
-
-    return Notification;
-  })();
-
-  exports.Notification = Notification;
+  });
+  Object.defineProperty(exports, 'Topics', {
+    enumerable: true,
+    get: function get() {
+      return _topics.Topics;
+    }
+  });
 });
