@@ -1,6 +1,6 @@
 {
-  "name": "utilities",
-  "version": "0.1.6",
+  "name": "sp-utilities",
+  "version": "0.1.7",
   "description": "A utilities bucket for the showpitch eco-sphere.",
   "keywords": [
     "aurelia",
@@ -13,14 +13,13 @@
   },
   "license": "CC0-1.0",
   "author": "Eric Johnson ericj@enjodesign.com",
-  "main": "dist/commonjs/notification.js",
+  "main": "dist/commonjs/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Showpitch/utilities"
   },
-  "jspmNodeConversion": false,
   "jspm": {
-    "main": "notification",
+    "main": "index",
     "format": "amd",
     "directories": {
       "lib": "dist/amd"
