@@ -24,5 +24,5 @@ Object.defineProperty(exports, 'Topics', {
 });
 
 function configure(config) {
-  config.globalResources('./helpers', './topics');
+  config.globalResources();
 }

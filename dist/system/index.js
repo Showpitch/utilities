@@ -4,7 +4,7 @@ System.register(['./helpers', './topics'], function (_export) {
   _export('configure', configure);
 
   function configure(config) {
-    config.globalResources('./helpers', './topics');
+    config.globalResources();
   }
 
   return {

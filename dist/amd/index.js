@@ -19,6 +19,6 @@ define(['exports', './helpers', './topics'], function (exports, _helpers, _topic
   });
 
   function configure(config) {
-    config.globalResources('./helpers', './topics');
+    config.globalResources();
   }
 });
