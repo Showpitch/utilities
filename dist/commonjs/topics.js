@@ -8,9 +8,11 @@ var _createClass = (function () { function defineProperties(target, props) { for
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
+var _aureliaFramework = require('aurelia-framework');
+
 var Topics = (function () {
   function Topics() {
-    _classCallCheck(this, Topics);
+    _classCallCheck(this, _Topics);
   }
 
   _createClass(Topics, null, [{
@@ -21,6 +23,8 @@ var Topics = (function () {
     enumerable: true
   }]);
 
+  var _Topics = Topics;
+  Topics = (0, _aureliaFramework.noView)(Topics) || Topics;
   return Topics;
 })();
 
