@@ -4,6 +4,7 @@ define(['exports', './helpers', './topics'], function (exports, _helpers, _topic
   Object.defineProperty(exports, '__esModule', {
     value: true
   });
+  exports.configure = configure;
   Object.defineProperty(exports, 'Helpers', {
     enumerable: true,
     get: function get() {
@@ -16,4 +17,8 @@ define(['exports', './helpers', './topics'], function (exports, _helpers, _topic
       return _topics.Topics;
     }
   });
+
+  function configure(config) {
+    config.globalResources('./helpers', './topics');
+  }
 });

@@ -3,6 +3,7 @@
 Object.defineProperty(exports, '__esModule', {
   value: true
 });
+exports.configure = configure;
 
 var _helpers = require('./helpers');
 
@@ -21,3 +22,7 @@ Object.defineProperty(exports, 'Topics', {
     return _topics.Topics;
   }
 });
+
+function configure(config) {
+  config.globalResources('./helpers', './topics');
+}

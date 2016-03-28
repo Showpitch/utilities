@@ -1,6 +1,12 @@
 System.register(['./helpers', './topics'], function (_export) {
   'use strict';
 
+  _export('configure', configure);
+
+  function configure(config) {
+    config.globalResources('./helpers', './topics');
+  }
+
   return {
     setters: [function (_helpers) {
       _export('Helpers', _helpers.Helpers);
