@@ -1,18 +1,28 @@
-System.register(['./helpers', './topics'], function (_export) {
-  'use strict';
+'use strict';
 
-  _export('configure', configure);
-
-  function configure(config) {
-    config.globalResources();
-  }
-
-  return {
-    setters: [function (_helpers) {
-      _export('Helpers', _helpers.Helpers);
-    }, function (_topics) {
-      _export('Topics', _topics.Topics);
-    }],
-    execute: function () {}
-  };
+Object.defineProperty(exports, '__esModule', {
+  value: true
 });
+exports.configure = configure;
+
+var _helpers = require('./helpers');
+
+Object.defineProperty(exports, 'Helpers', {
+  enumerable: true,
+  get: function get() {
+    return _helpers.Helpers;
+  }
+});
+
+var _topics = require('./topics');
+
+Object.defineProperty(exports, 'Topics', {
+  enumerable: true,
+  get: function get() {
+    return _topics.Topics;
+  }
+});
+
+function configure(config) {
+  config.globalResources();
+}

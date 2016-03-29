@@ -14,7 +14,7 @@ define(["exports"], function (exports) {
       _classCallCheck(this, Helpers);
     }
 
-    _createClass(Helpers, null, [{
+    _createClass(Helpers, [{
       key: "generateGUID",
       value: function generateGUID() {
         return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, function (a) {

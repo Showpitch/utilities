@@ -22,7 +22,7 @@ gulp.task('build-html-commonjs', function () {
 
 gulp.task('build-commonjs', ['build-html-commonjs'], function () {
   return gulp.src(paths.source)
-    .pipe(to5(assign({}, compilerOptions, {modules:'system'})))
+    .pipe(to5(assign({}, compilerOptions, {modules:'common'})))
     .pipe(gulp.dest(paths.output + 'commonjs'));
 });
 
