@@ -1,4 +1,4 @@
-define(['exports', 'aurelia-framework'], function (exports, _aureliaFramework) {
+define(['exports'], function (exports) {
   'use strict';
 
   Object.defineProperty(exports, '__esModule', {
@@ -11,7 +11,7 @@ define(['exports', 'aurelia-framework'], function (exports, _aureliaFramework) {
 
   var Topics = (function () {
     function Topics() {
-      _classCallCheck(this, _Topics);
+      _classCallCheck(this, Topics);
     }
 
     _createClass(Topics, null, [{
@@ -22,8 +22,6 @@ define(['exports', 'aurelia-framework'], function (exports, _aureliaFramework) {
       enumerable: true
     }]);
 
-    var _Topics = Topics;
-    Topics = (0, _aureliaFramework.noView)(Topics) || Topics;
     return Topics;
   })();
 
