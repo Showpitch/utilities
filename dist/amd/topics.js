@@ -13,6 +13,9 @@ define(['exports'], function (exports) {
     this.config = {
       environment: 'topics_config_environment'
     };
+    this.imageCropper = {
+      file: 'temp_topic_image_cropper_file'
+    };
   };
 
   exports.Topics = Topics;
