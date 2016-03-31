@@ -1,18 +1,24 @@
-System.register(['./helpers', './topics'], function (_export) {
-  'use strict';
+'use strict';
 
-  _export('configure', configure);
-
-  function configure(config) {
-    config.globalResources();
-  }
-
+System.register(['./helpers', './topics'], function (_export, _context) {
   return {
     setters: [function (_helpers) {
-      _export('Helpers', _helpers.Helpers);
+      var _exportObj = {};
+      _exportObj.Helpers = _helpers.Helpers;
+
+      _export(_exportObj);
     }, function (_topics) {
-      _export('Topics', _topics.Topics);
+      var _exportObj2 = {};
+      _exportObj2.Topics = _topics.Topics;
+
+      _export(_exportObj2);
     }],
-    execute: function () {}
+    execute: function () {
+      function configure(config) {
+        config.globalResources();
+      }
+
+      _export('configure', configure);
+    }
   };
 });
